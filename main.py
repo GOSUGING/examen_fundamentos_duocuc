@@ -20,14 +20,16 @@ while True:
         elif opc == 3:
             max_sueldo, min_sueldo, promedio, media_geometrica = fn.calcular_estadisticas(sueldo_aleatorios)
             if promedio is not None:
-                print("Sueldo máximo: ", max_sueldo)
-                print("Sueldo mínimo: ", min_sueldo)
-                print("Promedio de sueldos: ", promedio)
-                print("Media geométrica de sueldos:", media_geometrica)
+                print("Sueldo máximo: \n", max_sueldo)
+                print("Sueldo mínimo: \n", min_sueldo)
+                print("Promedio de sueldos: \n", promedio)
+                print("Media geométrica de sueldos: \n", media_geometrica)
         elif opc == 4:
             fn.generar_reporte(sueldo_aleatorios)
         elif opc == 5:
             print("Saliendo del programa...")
+            print("Desarrollado por Aron Suy")
+            print("Rut: 18.618.427-0")
             break
         else:
             print("Opción inválida. Seleccione una opción del 1 al 5.")
